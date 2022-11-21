@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+/* Variables */
+:root {
+    
+    --dark: #222831;
+    --night: #393E46;
+    --yellow: #C69749;
+    
+}
+/* Font */
+
+
+/* Box sizing */
+html { 
+    box-sizing: border-box;
+    
+    
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--night);
+    font-family: 'Dosis', sans-serif;
+}
+
+
+/* Header */
+.heading {
+    flex: 1;
+    font-size: 1.5rem;
+    color: var(--yellow);
+    background-color: var(--dark);
+    width: 100vw;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form section */
+.form-section {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form */
+.form {
+    background-color: var(--dark);
+    color: var(--yellow);
+    font-size: 1.2rem;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 25px;
+    width: 300px;
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    outline: var(--yellow) 3px solid;
+}
+
+button {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
