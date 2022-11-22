@@ -18,16 +18,37 @@
     <!-- Player Info form -->
     <div class="form-section">
 
+        <!-- Form -->
         <div class="form">
             <h2>Enter player details</h2>
             <form action="">
-                <input type="text" placeholder="Player 1 name" id="p1" required>
-                <input type="text" placeholder="Player 2 name" id="p2" required>
-                <button>Begin</button>
+                <input type="text" placeholder="Player 1 name" id="p1" autocomplete="off" required>
+                <input type="text" placeholder="Player 2 name" id="p2" autocomplete="off" required>
+                <button id="startBtn">Begin</button>
             </form>
         </div>
+
+        <!-- Game board -->
+        <div class="win-message">
+            <h2 class="message"></h2>
+            
+        </div>
+        <div class="game-board">
+            <div class="tile">0</div>
+            <div class="tile">1</div>
+            <div class="tile">2</div>
+            <div class="tile">3</div>
+            <div class="tile">4</div>
+            <div class="tile">5</div>
+            <div class="tile">6</div>
+            <div class="tile">7</div>
+            <div class="tile">8</div>
+        </div>
+
         
+
     </div>
+
     
 </body>
 </html>
